@@ -1,0 +1,11 @@
+__pycache__
+index/
+.idea/
+.venv/
+
+.env
+
+poetry.lock
+
+import/test.tsv
+*.parquet

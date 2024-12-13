@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "noosphere"
+version = "0.1.0"
+description = ""
+authors = []
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+accelerate = "^1.2.0"
+aioboto3 = "^13.2.0"
+aiohttp = "^3.11.10"
+graspologic = "^3.4.1"
+hnswlib = "^0.8.0"
+nano-vectordb = "^0.0.4.3"
+neo4j = "^5.27.0"
+networkx = "^3.4.2"
+ollama = "^0.4.4"
+openai = "^1.57.2"
+oracledb = "^2.5.0"
+pyarrow = "^18.1.0"
+pydantic = "^2.10.3"
+python-dotenv = "^1.0.1"
+pyvis = "^0.3.2"
+tenacity = "^9.0.0"
+tiktoken = "^0.8.0"
+torch = "^2.5.1"
+transformers = "^4.47.0"
+xxhash = "^3.5.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.2"
+pyright = "^1.1.390"
+ruff = "^0.8.2"
+
+[tool.pylint]
+disable = "C0114,C0115,C0116"
+
+[build-system]
+requires = [
+    "poetry-core",
+    "setuptools",
+    "wheel",
+]
+build-backend = "poetry.core.masonry.api"
